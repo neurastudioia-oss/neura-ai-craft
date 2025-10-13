@@ -8,7 +8,7 @@ const pricingPlans = [
   {
     name: "Essencial",
     slogan: "Ideal para começar com uma presença digital profissional e sólida.",
-    setupPrice: "R$ 1.800",
+    setupPrice: "A partir de R$ 1.500",
     monthlyPrice: "R$ 150/mês",
     monthlyOptional: true,
     features: [
@@ -28,7 +28,7 @@ const pricingPlans = [
   {
     name: "Crescimento",
     slogan: "A solução completa para transformar seu site em uma máquina de gerar leads.",
-    setupPrice: "R$ 3.500",
+    setupPrice: "A partir de R$ 1.500",
     monthlyPrice: "R$ 450/mês",
     monthlyOptional: false,
     featuresHeader: "Tudo do Plano Essencial, e mais:",
@@ -46,7 +46,7 @@ const pricingPlans = [
   {
     name: "Performance",
     slogan: "Para empresas prontas para escalar com estratégia de dados e mídia paga.",
-    setupPrice: "R$ 5.900",
+    setupPrice: "A partir de R$ 1.500",
     monthlyPrice: "R$ 850/mês",
     monthlyOptional: false,
     featuresHeader: "Tudo do Plano Crescimento, e mais:",
