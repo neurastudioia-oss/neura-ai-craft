@@ -1,0 +1,86 @@
+import { Mail, Phone, Linkedin, Instagram } from "lucide-react";
+
+const Footer = () => {
+  return (
+    <footer className="bg-foreground text-background py-12">
+      <div className="container px-6">
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
+          {/* Logo and Description */}
+          <div>
+            <h3 className="text-2xl font-bold mb-4">Neura Studio</h3>
+            <p className="text-background/80 leading-relaxed">
+              Websites inteligentes que geram resultados reais através da 
+              combinação de design e inteligência artificial.
+            </p>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="font-semibold mb-4">Links Rápidos</h4>
+            <ul className="space-y-2 text-background/80">
+              <li>
+                <a href="#packages" className="hover:text-background transition-colors">
+                  Nossos Pacotes
+                </a>
+              </li>
+              <li>
+                <a href="#differentials" className="hover:text-background transition-colors">
+                  Diferenciais
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="hover:text-background transition-colors">
+                  Contato
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h4 className="font-semibold mb-4">Contato</h4>
+            <ul className="space-y-3 text-background/80">
+              <li className="flex items-center gap-2">
+                <Mail className="h-4 w-4" />
+                <a href="mailto:contato@neurastudio.com" className="hover:text-background transition-colors">
+                  contato@neurastudio.com
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <Phone className="h-4 w-4" />
+                <a href="tel:+5511999999999" className="hover:text-background transition-colors">
+                  (11) 99999-9999
+                </a>
+              </li>
+            </ul>
+            
+            <div className="flex gap-4 mt-4">
+              <a 
+                href="https://linkedin.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors"
+              >
+                <Linkedin className="h-6 w-6" />
+              </a>
+              <a 
+                href="https://instagram.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors"
+              >
+                <Instagram className="h-6 w-6" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-background/20 pt-6 text-center text-background/60 text-sm">
+          <p>&copy; {new Date().getFullYear()} Neura Studio. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
