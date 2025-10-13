@@ -1,6 +1,5 @@
 import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
-import Packages from "@/components/Packages";
 import Differentials from "@/components/Differentials";
 import PricingTable from "@/components/PricingTable";
 import Portfolio from "@/components/Portfolio";
@@ -13,13 +12,10 @@ const Index = () => {
     <main className="min-h-screen">
       <Hero />
       <Problem />
-      <div id="packages">
-        <Packages />
-      </div>
       <div id="differentials">
         <Differentials />
       </div>
-      <div id="pricing">
+      <div id="packages">
         <PricingTable />
       </div>
       <Portfolio />
