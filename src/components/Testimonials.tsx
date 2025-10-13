@@ -19,12 +19,12 @@ const Testimonials = () => {
             <CardContent className="pt-6">
               <Quote className="h-10 w-10 text-primary mb-4 opacity-50" />
               <p className="text-lg mb-4 leading-relaxed">
-                "A Neura Studio transformou completamente nossa presença online. Em 3 meses, 
-                nosso tráfego orgânico aumentou 180% e as conversões triplicaram. 
-                O investimento se pagou rapidamente."
+                "Desde que a Neura Studio construiu nosso site e implementou a estratégia de conversão, 
+                recebemos uma média de 10 leads qualificados por dia. O retorno sobre investimento 
+                superou todas as nossas expectativas."
               </p>
-              <div className="font-semibold">— Maria Silva</div>
-              <div className="text-sm text-muted-foreground">CEO, Tech Solutions</div>
+              <div className="font-semibold">— Catedral Transportes</div>
+              <div className="text-sm text-muted-foreground">Logística e Transporte de Veículos</div>
             </CardContent>
           </Card>
 
