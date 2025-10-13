@@ -8,7 +8,7 @@ const pricingPlans = [
   {
     name: "Essencial",
     slogan: "Ideal para começar com uma presença digital profissional e sólida.",
-    setupPrice: "A partir de R$ 1.500",
+    setupPrice: "1.500",
     monthlyPrice: "R$ 150/mês",
     monthlyOptional: true,
     features: [
@@ -28,7 +28,7 @@ const pricingPlans = [
   {
     name: "Crescimento",
     slogan: "A solução completa para transformar seu site em uma máquina de gerar leads.",
-    setupPrice: "A partir de R$ 1.500",
+    setupPrice: "1.500",
     monthlyPrice: "R$ 450/mês",
     monthlyOptional: false,
     featuresHeader: "Tudo do Plano Essencial, e mais:",
@@ -46,7 +46,7 @@ const pricingPlans = [
   {
     name: "Performance",
     slogan: "Para empresas prontas para escalar com estratégia de dados e mídia paga.",
-    setupPrice: "A partir de R$ 1.500",
+    setupPrice: "1.500",
     monthlyPrice: "R$ 850/mês",
     monthlyOptional: false,
     featuresHeader: "Tudo do Plano Crescimento, e mais:",
@@ -105,8 +105,9 @@ const PricingTable = () => {
                     <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-1">
                       Investimento Inicial
                     </div>
-                    <div className="text-3xl font-bold text-primary">{plan.setupPrice}</div>
-                    <div className="text-xs text-muted-foreground">Pagamento Único</div>
+                    <div className="text-sm text-muted-foreground mb-1">A partir de</div>
+                    <div className="text-3xl font-bold text-primary">R$ {plan.setupPrice}</div>
+                    <div className="text-xs text-muted-foreground mt-1">Pagamento Único</div>
                   </div>
                   
                   <Separator />
