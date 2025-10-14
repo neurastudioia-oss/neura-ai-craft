@@ -42,18 +42,18 @@ const pricingPlans = [
 
 const PricingTable = () => {
   return (
-    <section className="py-20 bg-background">
-      <div className="container px-6">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+    <section className="py-12 sm:py-16 md:py-20 bg-background">
+      <div className="container px-4 sm:px-6">
+        <div className="text-center mb-10 sm:mb-16 animate-fade-in">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 px-2">
             Escolha seu Ambiente de Crescimento
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
             Nossa qualidade de construção é a mesma para todos. O que muda é a camada de inteligência e serviço para impulsionar seus resultados.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
           {pricingPlans.map((plan, index) => (
             <Card 
               key={index} 

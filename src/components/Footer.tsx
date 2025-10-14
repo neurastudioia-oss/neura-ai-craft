@@ -2,13 +2,13 @@ import { Mail, Phone, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-foreground text-background py-12">
-      <div className="container px-6">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+    <footer className="bg-foreground text-background py-8 sm:py-12">
+      <div className="container px-4 sm:px-6">
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Logo and Description */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">Neura Studio</h3>
-            <p className="text-background/80 leading-relaxed">
+            <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Neura Studio</h3>
+            <p className="text-sm sm:text-base text-background/80 leading-relaxed">
               Websites inteligentes que geram resultados reais através da 
               combinação de design e inteligência artificial.
             </p>
@@ -16,8 +16,8 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-4">Links Rápidos</h4>
-            <ul className="space-y-2 text-background/80">
+            <h4 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Links Rápidos</h4>
+            <ul className="space-y-2 text-sm sm:text-base text-background/80">
               <li>
                 <a href="#packages" className="hover:text-background transition-colors">
                   Nossos Pacotes
@@ -38,8 +38,8 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-semibold mb-4">Contato</h4>
-            <ul className="space-y-3 text-background/80">
+            <h4 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Contato</h4>
+            <ul className="space-y-3 text-sm sm:text-base text-background/80">
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
                 <a href="https://wa.me/5561999167627" target="_blank" rel="noopener noreferrer" className="hover:text-background transition-colors">

@@ -25,18 +25,18 @@ const Portfolio = () => {
   ];
 
   return (
-    <section className="py-20 bg-secondary/30">
-      <div className="container px-6">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+    <section className="py-12 sm:py-16 md:py-20 bg-secondary/30">
+      <div className="container px-4 sm:px-6">
+        <div className="text-center mb-10 sm:mb-16 animate-fade-in">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 px-2">
             Projetos que transformam negócios
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground px-4">
             Conheça alguns sites que criamos e os resultados que geraram
           </p>
         </div>
 
-        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {projects.map((project, index) => (
             <Card key={index} className="overflow-hidden hover:shadow-xl transition-all duration-300 group">
               <div className="relative overflow-hidden">

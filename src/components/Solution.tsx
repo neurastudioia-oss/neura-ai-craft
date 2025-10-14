@@ -2,27 +2,27 @@ import { Lightbulb } from "lucide-react";
 
 const Solution = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
-      <div className="container px-6 max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 items-center animate-fade-in">
+    <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+      <div className="container px-4 sm:px-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center animate-fade-in">
           {/* Text Content */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <Lightbulb className="h-12 w-12 text-primary" />
-              <h2 className="text-4xl md:text-5xl font-bold">
+            <div className="flex items-start sm:items-center gap-3 mb-4 sm:mb-6">
+              <Lightbulb className="h-10 w-10 sm:h-12 sm:w-12 text-primary flex-shrink-0 mt-1 sm:mt-0" />
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
                 Nós entregamos o mapa e a bússola.
               </h2>
             </div>
             
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed mb-4 sm:mb-6">
               Na Neura Studio, cada projeto combina:
             </p>
             
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-4">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed mb-3 sm:mb-4">
               <span className="text-foreground font-semibold">Alavancagem:</span> Site otimizado + estratégias de SEO, conversão e presença digital completa.
             </p>
             
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed mb-6 sm:mb-8">
               <span className="text-foreground font-semibold">Monitoramento:</span> Relatórios e inteligência de dados que mostram exatamente onde investir.
             </p>
             
@@ -30,7 +30,7 @@ const Solution = () => {
               href="https://wa.me/5561999167627?text=Olá! Quero conhecer os planos da Neura Studio."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-3 text-base font-medium rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors duration-300 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center justify-center w-full sm:w-auto px-6 sm:px-8 py-3 text-sm sm:text-base font-medium rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors duration-300 shadow-lg hover:shadow-xl"
             >
               Ver os Planos
             </a>

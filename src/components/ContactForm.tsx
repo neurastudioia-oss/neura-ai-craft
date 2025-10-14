@@ -67,22 +67,22 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-subtle">
-      <div className="container px-6 max-w-4xl mx-auto">
-        <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+    <section id="contact" className="py-12 sm:py-16 md:py-20 bg-gradient-subtle">
+      <div className="container px-4 sm:px-6 max-w-4xl mx-auto">
+        <div className="text-center mb-8 sm:mb-12 animate-fade-in">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 px-2">
             Pronto para parar de adivinhar e começar a decidir com clareza?
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8 px-4">
             Vamos construir seu ambiente de crescimento com clareza total sobre seus resultados.
           </p>
 
           {/* CTA Options */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 sm:mb-12 px-4">
             <Button 
               size="lg"
               asChild
-              className="text-lg px-8 py-6 shadow-xl hover:shadow-primary/20 transition-all duration-300 hover:scale-105"
+              className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 shadow-xl hover:shadow-primary/20 transition-all duration-300 hover:scale-105 w-full sm:w-auto"
             >
               <a 
                 href="https://wa.me/5561999167627?text=Olá! Quero falar sobre meu projeto e conhecer as soluções da Neura Studio."
@@ -95,7 +95,7 @@ const ContactForm = () => {
             </Button>
           </div>
 
-          <div className="relative mb-8">
+          <div className="relative mb-6 sm:mb-8">
             <div className="absolute inset-0 flex items-center">
               <div className="w-full border-t border-border"></div>
             </div>
@@ -105,7 +105,7 @@ const ContactForm = () => {
           </div>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-6 bg-card p-8 rounded-lg shadow-xl border border-border">
+        <form onSubmit={handleSubmit} className="space-y-6 bg-card p-4 sm:p-6 md:p-8 rounded-lg shadow-xl border border-border">
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-2">
               <Label htmlFor="name">Nome *</Label>
@@ -161,7 +161,7 @@ const ContactForm = () => {
           <Button 
             type="submit" 
             size="lg" 
-            className="w-full md:w-auto"
+            className="w-full"
             disabled={isSubmitting}
           >
             <Mail className="mr-2 h-4 w-4" />
