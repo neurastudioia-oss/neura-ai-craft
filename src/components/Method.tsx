@@ -3,18 +3,18 @@ import { Gauge, LayoutDashboard, TrendingUp } from "lucide-react";
 const methodSteps = [
   {
     icon: Gauge,
-    title: "Construímos seu Motor de Dados",
-    description: "Criamos um site de alta performance, tecnicamente otimizado para capturar cada interação valiosa do seu cliente.",
+    title: "Criamos seu Site de Alta Performance",
+    description: "Desenvolvemos um site profissional, otimizado para SEO e conversões, com design responsivo e experiência de usuário impecável.",
   },
   {
     icon: LayoutDashboard,
-    title: "Entregamos seu Painel de Controle",
-    description: "Desenvolvemos e entregamos seu dashboard 100% personalizado, unificando as métricas que realmente importam para você.",
+    title: "Entregamos seu Dashboard Personalizado",
+    description: "Nosso diferencial: você recebe um painel de controle visual que unifica todas as métricas importantes do seu negócio em tempo real.",
   },
   {
     icon: TrendingUp,
-    title: "Pilotamos o Crescimento com Você",
-    description: "Através do nosso plano mensal, não apenas mantemos a máquina funcionando, mas analisamos os dados proativamente para identificar oportunidades e otimizar seus resultados continuamente.",
+    title: "Acompanhamos seu Crescimento",
+    description: "Através do plano mensal, mantemos seu site atualizado, geramos conteúdo estratégico e analisamos os dados para maximizar seus resultados.",
   },
 ];
 
@@ -24,10 +24,10 @@ const Method = () => {
       <div className="container px-6 max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Nosso Método: O Ciclo de Crescimento Inteligente
+            Como Transformamos seu Negócio Digital
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Transformamos dados em decisões e decisões em crescimento mensurável
+            Site profissional + Dashboard inteligente + Acompanhamento contínuo
           </p>
         </div>
 

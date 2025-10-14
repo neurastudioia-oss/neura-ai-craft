@@ -7,10 +7,10 @@ const pricingPlans = [
   {
     name: "Essencial",
     dashboardName: "Painel de Saúde Digital",
-    slogan: "Tenha visibilidade completa da saúde do seu site e das primeiras conversões.",
+    slogan: "Site profissional completo + Dashboard para acompanhar tráfego e primeiras conversões.",
     features: [
-      { name: "Dashboard Personalizado: Painel de Saúde Digital", included: true, highlight: true },
       { name: "Site Institucional de até 3 páginas", included: true },
+      { name: "Dashboard Personalizado: Painel de Saúde Digital", included: true, highlight: true },
       { name: "Design 100% Responsivo", included: true },
       { name: "SEO On-Page Básico", included: true },
       { name: "Setup Google Analytics e Search Console", included: true },
@@ -27,11 +27,11 @@ const pricingPlans = [
   {
     name: "Crescimento",
     dashboardName: "Painel de Conversão e Leads",
-    slogan: "Visualize cada lead, cada conversão e o desempenho das suas campanhas em um só lugar.",
+    slogan: "Site otimizado para leads + Blog + Dashboard completo de conversões e performance de campanhas.",
     featuresHeader: "Tudo do Plano Essencial, e mais:",
     features: [
-      { name: "Dashboard Personalizado: Painel de Conversão e Leads", included: true, highlight: true },
       { name: "Site de até 7 páginas + Blog Otimizado", included: true },
+      { name: "Dashboard Personalizado: Painel de Conversão e Leads", included: true, highlight: true },
       { name: "Tagueamento Avançado de Eventos de Conversão", included: true },
       { name: "Métricas de Lead: Origem, Custo e Taxa de Conversão", included: true },
       { name: "Agente de Conteúdo com IA (4 artigos iniciais)", included: true },
@@ -46,11 +46,11 @@ const pricingPlans = [
   {
     name: "Performance",
     dashboardName: "Central de Comando de ROI",
-    slogan: "Domine seu ROI, ROAS e todas as métricas críticas para escalar com inteligência e segurança.",
+    slogan: "Site de alta conversão + Landing Pages + Dashboard avançado com ROI, ROAS e consultoria estratégica.",
     featuresHeader: "Tudo do Plano Crescimento, e mais:",
     features: [
-      { name: "Dashboard Personalizado: Central de Comando de ROI", included: true, highlight: true },
       { name: "Site Completo ou Landing Page de Alta Conversão", included: true },
+      { name: "Dashboard Personalizado: Central de Comando de ROI", included: true, highlight: true },
       { name: "Análise Completa de ROI e ROAS por Canal", included: true },
       { name: "Integração com Plataformas de Mídia (Meta, Google Ads)", included: true },
       { name: "Consultoria Estratégica de Mídia (1h30 mensal)", included: true },
@@ -77,7 +77,7 @@ const PricingTable = () => {
             Escolha seu Ambiente de Crescimento
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Todos os planos incluem um <span className="text-foreground font-semibold">Dashboard Personalizado</span> para que você tenha controle total sobre seus resultados.
+            Site profissional + Dashboard personalizado. Todos os planos incluem as ferramentas que você precisa para crescer com clareza e controle.
           </p>
         </div>
 

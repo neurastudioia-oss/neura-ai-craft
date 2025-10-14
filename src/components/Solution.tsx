@@ -10,19 +10,20 @@ const Solution = () => {
             <div className="flex items-center gap-3 mb-6">
               <Lightbulb className="h-12 w-12 text-primary" />
               <h2 className="text-4xl md:text-5xl font-bold">
-                Nós acendemos a luz.
+                Entregamos tudo que você precisa para crescer
               </h2>
             </div>
             
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
-              A Neura Studio transforma seus dados de marketing em uma{" "}
-              <span className="text-foreground font-semibold">central de comando visual e intuitiva</span>.
+              Criamos <span className="text-foreground font-semibold">sites de alta performance</span>, 
+              otimizados para SEO, conversão e experiência do usuário. 
+              Seu site é a base do crescimento digital.
             </p>
             
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Nós conectamos seu site, suas campanhas de mídia e suas metas de negócio em um{" "}
-              <span className="text-foreground font-semibold">único dashboard personalizado</span>, 
-              para que você tenha controle total e tome decisões que impactam diretamente seu faturamento.
+              E o nosso diferencial? Além do site, você recebe um{" "}
+              <span className="text-foreground font-semibold">dashboard personalizado</span> que conecta 
+              todas as suas métricas em tempo real, para que você tome decisões baseadas em dados, não em achismos.
             </p>
           </div>
           

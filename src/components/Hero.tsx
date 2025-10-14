@@ -36,9 +36,9 @@ const Hero = () => {
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-          Entregamos o <span className="text-foreground font-semibold">painel de controle</span> para o crescimento do seu negócio.
+          Criamos <span className="text-foreground font-semibold">sites de alta performance</span> que geram resultados reais.
           <br />
-          Visualize seu ROI e suas conversões em tempo real com nossos <span className="text-foreground font-semibold">dashboards personalizados</span>.
+          E entregamos um <span className="text-foreground font-semibold">dashboard personalizado</span> para você acompanhar cada conversão e ROI em tempo real.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -56,15 +56,15 @@ const Hero = () => {
         <div className="mt-16 flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-primary rounded-full" />
-            <span>Dashboards personalizados</span>
+            <span>Sites que convertem</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-primary rounded-full" />
-            <span>Dados em tempo real</span>
+            <span>Dashboard personalizado incluso</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-primary rounded-full" />
-            <span>Controle total do ROI</span>
+            <span>Métricas em tempo real</span>
           </div>
         </div>
       </div>
