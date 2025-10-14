@@ -11,7 +11,7 @@ const Problem = () => {
           Seu site trabalha para você ou apenas existe online?
         </h2>
         <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-          Muitas empresas investem em um site e o tratam como um cartão de visitas digital. Ele existe, mas não gera oportunidades. Você não sabe quem o visita, de onde essas pessoas vêm, ou quais ações elas tomam. Cada real investido em marketing parece um tiro no escuro. A falta de dados claros transforma decisões importantes em apostas arriscadas.
+          Muitas empresas têm um site que existe, mas não gera oportunidades. Sem dados claros, cada real investido em marketing é um tiro no escuro.
         </p>
       </div>
     </section>

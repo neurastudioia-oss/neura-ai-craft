@@ -15,19 +15,15 @@ const Solution = () => {
             </div>
             
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
-              Na Neura Studio, acreditamos que um site é muito mais do que um design bonito. É o motor central da sua estratégia digital. Por isso, cada projeto que entregamos tem um propósito duplo:
+              Na Neura Studio, cada projeto tem dois pilares:
             </p>
             
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
-              <span className="text-foreground font-semibold">O Motor:</span> Um site de alta performance, tecnicamente otimizado para atrair e converter seu público.
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-4">
+              <span className="text-foreground font-semibold">O Motor:</span> Site de alta performance otimizado para converter.
             </p>
             
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
-              <span className="text-foreground font-semibold">O Painel de Controle:</span> Um dashboard 100% personalizado que traduz os dados do seu site em respostas claras.
-            </p>
-            
-            <p className="text-lg md:text-xl text-foreground font-semibold leading-relaxed mb-8">
-              Nós transformamos dados complexos em decisões de negócio inteligentes.
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
+              <span className="text-foreground font-semibold">O Painel:</span> Dashboard personalizado que transforma dados em decisões claras.
             </p>
             
             <a

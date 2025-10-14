@@ -10,7 +10,7 @@ const Testimonials = () => {
             Clareza que gera resultados para nossos parceiros.
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Peça depoimentos que foquem na transformação. Em vez de "Adorei o site", busque por algo como: "Antes da Neura Studio, eu não fazia ideia se meu marketing funcionava. Hoje, eu abro o dashboard toda manhã e sei exatamente de onde vêm meus clientes e qual o retorno do meu investimento."
+            Veja o que nossos parceiros dizem sobre trabalhar com dados claros.
           </p>
         </div>
 

@@ -54,7 +54,7 @@ const ContactForm = () => {
             Pronto para parar de adivinhar e começar a decidir com clareza?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Chega de incertezas. Sua empresa merece uma presença digital que não apenas impressiona, mas que informa e gera resultados que você pode ver. Vamos conversar sobre como a Neura Studio pode construir seu ambiente de crescimento.
+            Vamos construir seu ambiente de crescimento com clareza total sobre seus resultados.
           </p>
         </div>
 
