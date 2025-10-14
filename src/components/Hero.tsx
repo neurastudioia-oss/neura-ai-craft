@@ -24,19 +24,19 @@ const Hero = () => {
       {/* Content */}
       <div className="container relative z-10 px-6 py-32 text-center animate-fade-in">
         <div className="inline-block mb-6 px-6 py-2 bg-primary/10 rounded-full border border-primary/20">
-          <span className="text-sm font-medium text-primary">✨ Seu parceiro estratégico em crescimento</span>
+          <span className="text-sm font-medium text-primary">✨ Desenvolvimento Web + Ecossistema Digital</span>
         </div>
         
         <h1 className="text-6xl md:text-8xl font-bold mb-8 leading-tight">
-          <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-            Seu Negócio,
-          </span>
+          <span className="text-foreground">Desenvolvemos</span>
           <br />
-          <span className="text-foreground">Guiado por Dados.</span>
+          <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
+            Sites que Geram Resultados.
+          </span>
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-          Nós criamos soluções completas para alavancar e monitorar seu site de forma efetiva, transformando sua presença digital em resultados concretos.
+          Criamos seu site profissional e entregamos um ecossistema completo de soluções para alavancar sua presença digital: SEO, análise de dados, estratégias de conversão e monitoramento contínuo.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -53,16 +53,16 @@ const Hero = () => {
         {/* Trust Indicators */}
         <div className="mt-16 flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
           <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-primary rounded-full" />
-            <span>SEO e Conversão otimizados</span>
+            <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+            <span>Desenvolvimento profissional</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-primary rounded-full" />
-            <span>Estratégia digital completa</span>
+            <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+            <span>SEO e performance</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-primary rounded-full" />
-            <span>Inteligência de dados inclusa</span>
+            <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+            <span>Análise e monitoramento</span>
           </div>
         </div>
       </div>
