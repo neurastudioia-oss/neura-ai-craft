@@ -39,11 +39,11 @@ const Hero = () => {
           <Button 
             size="lg" 
             asChild
-            className="text-lg px-10 py-7 shadow-2xl hover:shadow-primary/20 transition-all duration-300 hover:scale-105 group"
+            className="text-lg px-12 py-8 shadow-[0_0_40px_rgba(var(--primary-rgb),0.3)] hover:shadow-[0_0_60px_rgba(var(--primary-rgb),0.5)] transition-all duration-500 hover:scale-105 group relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:-translate-x-full hover:before:translate-x-full before:transition-transform before:duration-700"
           >
-            <a href="https://wa.me/5561999167627?text=Olá! Gostaria de conhecer os Ambientes de Crescimento da Neura Studio." target="_blank" rel="noopener noreferrer">
-              Conheça os Ambientes de Crescimento
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            <a href="https://wa.me/5561999167627?text=Olá! Quero alavancar minha presença digital com a Neura Studio." target="_blank" rel="noopener noreferrer">
+              Quero Alavancar Meu Negócio
+              <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-2 transition-transform duration-300" />
             </a>
           </Button>
         </div>
