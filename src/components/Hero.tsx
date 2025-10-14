@@ -24,20 +24,21 @@ const Hero = () => {
       {/* Content */}
       <div className="container relative z-10 px-6 py-32 text-center animate-fade-in">
         <div className="inline-block mb-6 px-6 py-2 bg-primary/10 rounded-full border border-primary/20">
-          <span className="text-sm font-medium text-primary">✨ Websites que vendem 24/7</span>
+          <span className="text-sm font-medium text-primary">✨ Seu parceiro estratégico em crescimento</span>
         </div>
         
         <h1 className="text-6xl md:text-8xl font-bold mb-8 leading-tight">
           <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-            Websites Inteligentes
+            Menos achismo,
           </span>
           <br />
-          <span className="text-foreground">que Geram Resultados</span>
+          <span className="text-foreground">mais resultados.</span>
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-          Combinamos design de ponta e inteligência artificial para criar 
-          <span className="text-foreground font-semibold"> seu melhor vendedor digital</span>
+          Entregamos o <span className="text-foreground font-semibold">painel de controle</span> para o crescimento do seu negócio.
+          <br />
+          Visualize seu ROI e suas conversões em tempo real com nossos <span className="text-foreground font-semibold">dashboards personalizados</span>.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -46,7 +47,7 @@ const Hero = () => {
             onClick={scrollToContact}
             className="text-lg px-10 py-7 shadow-2xl hover:shadow-primary/20 transition-all duration-300 hover:scale-105 group"
           >
-            Agende sua Consultoria Gratuita
+            Descubra seu Ambiente de Crescimento
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>
@@ -55,15 +56,15 @@ const Hero = () => {
         <div className="mt-16 flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-primary rounded-full" />
-            <span>Sites que convertem</span>
+            <span>Dashboards personalizados</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-primary rounded-full" />
-            <span>SEO otimizado com IA</span>
+            <span>Dados em tempo real</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-primary rounded-full" />
-            <span>Resultados mensuráveis</span>
+            <span>Controle total do ROI</span>
           </div>
         </div>
       </div>

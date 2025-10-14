@@ -51,11 +51,11 @@ const ContactForm = () => {
       <div className="container px-6 max-w-4xl mx-auto">
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Pronto para transformar sua presença online?
+            Chega de adivinhar. Veja a clareza em ação.
           </h2>
           <p className="text-xl text-muted-foreground">
-            Vamos conversar sobre como a Neura Studio pode ajudar sua empresa a crescer. 
-            A consultoria inicial é por nossa conta.
+            Que tal ver como seria o painel de controle do seu negócio? 
+            Agende uma demonstração gratuita e vamos desenhar, ao vivo, um esboço do seu dashboard personalizado.
           </p>
         </div>
 
@@ -109,7 +109,7 @@ const ContactForm = () => {
           </div>
 
           <Button type="submit" size="lg" className="w-full md:w-auto">
-            Vamos Conversar!
+            Agendar Demonstração Gratuita
             <Send className="ml-2 h-4 w-4" />
           </Button>
         </form>

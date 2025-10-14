@@ -6,48 +6,60 @@ import { Check, Minus } from "lucide-react";
 const pricingPlans = [
   {
     name: "Essencial",
-    slogan: "Ideal para começar com uma presença digital profissional e sólida.",
+    dashboardName: "Painel de Saúde Digital",
+    slogan: "Tenha visibilidade completa da saúde do seu site e das primeiras conversões.",
     features: [
+      { name: "Dashboard Personalizado: Painel de Saúde Digital", included: true, highlight: true },
       { name: "Site Institucional de até 3 páginas", included: true },
       { name: "Design 100% Responsivo", included: true },
       { name: "SEO On-Page Básico", included: true },
       { name: "Setup Google Analytics e Search Console", included: true },
+      { name: "Métricas em Tempo Real: Tráfego e Comportamento", included: true },
       { name: "Suporte Técnico e Manutenção", included: true },
       { name: "Hospedagem e Backups de Segurança", included: true },
-      { name: "Tagueamento de Conversões", included: false },
-      { name: "Agente de Conteúdo", included: false },
-      { name: "Consultoria de Mídia", included: false },
+      { name: "Tagueamento Avançado de Conversões", included: false },
+      { name: "Análise de ROI de Campanhas", included: false },
+      { name: "Consultoria Estratégica de Mídia", included: false },
     ],
-    cta: "Peça um Orçamento",
+    cta: "Começar com Clareza",
     popular: false,
   },
   {
     name: "Crescimento",
-    slogan: "A solução completa para transformar seu site em uma máquina de gerar leads.",
+    dashboardName: "Painel de Conversão e Leads",
+    slogan: "Visualize cada lead, cada conversão e o desempenho das suas campanhas em um só lugar.",
     featuresHeader: "Tudo do Plano Essencial, e mais:",
     features: [
-      { name: "Site de até 7 páginas + Blog", included: true },
-      { name: "Tagueamento de Eventos de Conversão", included: true },
-      { name: "Agente de Conteúdo (4 artigos iniciais)", included: true },
-      { name: "2 Novos Artigos por Mês (Plano Mensal)", included: true },
-      { name: "Relatório Mensal Simplificado", included: true },
-      { name: "Consultoria de Mídia", included: false },
+      { name: "Dashboard Personalizado: Painel de Conversão e Leads", included: true, highlight: true },
+      { name: "Site de até 7 páginas + Blog Otimizado", included: true },
+      { name: "Tagueamento Avançado de Eventos de Conversão", included: true },
+      { name: "Métricas de Lead: Origem, Custo e Taxa de Conversão", included: true },
+      { name: "Agente de Conteúdo com IA (4 artigos iniciais)", included: true },
+      { name: "2 Novos Artigos Otimizados por Mês", included: true },
+      { name: "Relatório Mensal Simplificado com Insights", included: true },
+      { name: "Análise de ROI de Campanhas", included: false },
+      { name: "Consultoria Estratégica de Mídia", included: false },
     ],
-    cta: "Comece a Crescer",
+    cta: "Controlar Meu Crescimento",
     popular: true,
   },
   {
     name: "Performance",
-    slogan: "Para empresas prontas para escalar com estratégia de dados e mídia paga.",
+    dashboardName: "Central de Comando de ROI",
+    slogan: "Domine seu ROI, ROAS e todas as métricas críticas para escalar com inteligência e segurança.",
     featuresHeader: "Tudo do Plano Crescimento, e mais:",
     features: [
+      { name: "Dashboard Personalizado: Central de Comando de ROI", included: true, highlight: true },
       { name: "Site Completo ou Landing Page de Alta Conversão", included: true },
-      { name: "Consultoria Estratégica de Mídia (1h30)", included: true },
+      { name: "Análise Completa de ROI e ROAS por Canal", included: true },
+      { name: "Integração com Plataformas de Mídia (Meta, Google Ads)", included: true },
+      { name: "Consultoria Estratégica de Mídia (1h30 mensal)", included: true },
       { name: "Relatório Inicial de Oportunidades SEO", included: true },
-      { name: "4 Novos Artigos por Mês (Plano Mensal)", included: true },
-      { name: "Relatório Mensal Detalhado com Insights", included: true },
+      { name: "4 Novos Artigos Estratégicos por Mês", included: true },
+      { name: "Relatório Mensal Detalhado com Plano de Ação", included: true },
+      { name: "Suporte Prioritário e Análise Proativa", included: true },
     ],
-    cta: "Agende uma Estratégia",
+    cta: "Escalar com Inteligência",
     popular: false,
   },
 ];
@@ -62,10 +74,10 @@ const PricingTable = () => {
       <div className="container px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Planos transparentes para impulsionar seu negócio
+            Escolha seu Ambiente de Crescimento
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Escolha a solução ideal para sua empresa, desde a presença inicial até a performance total em marketing digital.
+            Todos os planos incluem um <span className="text-foreground font-semibold">Dashboard Personalizado</span> para que você tenha controle total sobre seus resultados.
           </p>
         </div>
 
@@ -85,6 +97,13 @@ const PricingTable = () => {
               
               <CardHeader className="pb-4">
                 <CardTitle className="text-2xl">{plan.name}</CardTitle>
+                {plan.dashboardName && (
+                  <div className="mt-2 mb-3">
+                    <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
+                      {plan.dashboardName}
+                    </Badge>
+                  </div>
+                )}
                 <CardDescription className="text-sm leading-relaxed">{plan.slogan}</CardDescription>
               </CardHeader>
               
@@ -101,7 +120,7 @@ const PricingTable = () => {
                       ) : (
                         <Minus className="h-5 w-5 text-muted-foreground flex-shrink-0 mt-0.5" />
                       )}
-                      <span className={`text-sm ${!feature.included ? 'text-muted-foreground' : ''}`}>
+                      <span className={`text-sm ${!feature.included ? 'text-muted-foreground' : ''} ${feature.highlight ? 'font-semibold text-foreground' : ''}`}>
                         {feature.name}
                       </span>
                     </div>
