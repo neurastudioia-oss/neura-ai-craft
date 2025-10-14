@@ -7,57 +7,77 @@ const pricingPlans = [
   {
     name: "Essencial",
     dashboardName: "Painel de Saúde Digital",
-    slogan: "Site profissional completo + Dashboard para acompanhar tráfego e primeiras conversões.",
+    slogan: "Sua Fundação Digital Inteligente",
+    description: "A presença online profissional que sua empresa merece, com clareza total sobre seus dados.",
     features: [
-      { name: "Site Institucional de até 3 páginas", included: true },
-      { name: "Dashboard Personalizado: Painel de Saúde Digital", included: true, highlight: true },
-      { name: "Design 100% Responsivo", included: true },
-      { name: "SEO On-Page Básico", included: true },
-      { name: "Setup Google Analytics e Search Console", included: true },
-      { name: "Métricas em Tempo Real: Tráfego e Comportamento", included: true },
-      { name: "Suporte Técnico e Manutenção", included: true },
-      { name: "Hospedagem e Backups de Segurança", included: true },
-      { name: "Tagueamento Avançado de Conversões", included: false },
-      { name: "Análise de ROI de Campanhas", included: false },
-      { name: "Consultoria Estratégica de Mídia", included: false },
+      { 
+        name: "Site Profissional de Alta Performance", 
+        included: true, 
+        description: "Uma base sólida com design moderno e otimizado, pronta para crescer com seu negócio."
+      },
+      { 
+        name: "Dashboard: Painel de Saúde Digital", 
+        included: true, 
+        highlight: true,
+        description: "Acompanhe em tempo real o tráfego e a origem dos seus visitantes."
+      },
+      { 
+        name: "Plano Mensal de Suporte & Segurança", 
+        included: true,
+        description: "Hospedagem, backups e manutenção para sua total tranquilidade."
+      },
     ],
-    cta: "Começar com Clareza",
+    cta: "Construir minha Base",
     popular: false,
   },
   {
     name: "Crescimento",
     dashboardName: "Painel de Conversão e Leads",
-    slogan: "Site otimizado para leads + Blog + Dashboard completo de conversões e performance de campanhas.",
-    featuresHeader: "Tudo do Plano Essencial, e mais:",
+    slogan: "Seu Ambiente de Geração de Leads",
+    description: "A ferramenta completa para transformar seu site em uma máquina de resultados mensuráveis.",
     features: [
-      { name: "Site de até 7 páginas + Blog Otimizado", included: true },
-      { name: "Dashboard Personalizado: Painel de Conversão e Leads", included: true, highlight: true },
-      { name: "Tagueamento Avançado de Eventos de Conversão", included: true },
-      { name: "Métricas de Lead: Origem, Custo e Taxa de Conversão", included: true },
-      { name: "Blog 100% Administrado por Nós (4 artigos iniciais para autoridade no Google)", included: true },
-      { name: "2 Novos Artigos Estratégicos por Mês", included: true },
-      { name: "Relatório Mensal Simplificado com Insights", included: true },
-      { name: "Análise de ROI de Campanhas", included: false },
-      { name: "Consultoria Estratégica de Mídia", included: false },
+      { 
+        name: "Site Profissional de Alta Performance", 
+        included: true,
+        description: "Configurado com tagueamento avançado de metas para rastrear cada conversão."
+      },
+      { 
+        name: "Dashboard: Painel de Conversão e Leads", 
+        included: true, 
+        highlight: true,
+        description: "Saiba exatamente quantos leads seu site gera e o que impulsiona seus resultados."
+      },
+      { 
+        name: "Agente de Conteúdo Estratégico", 
+        included: true,
+        description: "Nós criamos e publicamos 2 novos artigos de blog por mês para atrair seu público-alvo."
+      },
     ],
-    cta: "Controlar Meu Crescimento",
+    cta: "Acelerar meus Resultados",
     popular: true,
   },
   {
     name: "Performance",
     dashboardName: "Central de Comando de ROI",
-    slogan: "Site de alta conversão + Landing Pages + Dashboard avançado com ROI, ROAS e consultoria estratégica.",
-    featuresHeader: "Tudo do Plano Crescimento, e mais:",
+    slogan: "Sua Central de Comando para ROI",
+    description: "A parceria estratégica definitiva para escalar seu negócio com marketing orientado a dados.",
     features: [
-      { name: "Site Completo ou Landing Page de Alta Conversão", included: true },
-      { name: "Dashboard Personalizado: Central de Comando de ROI", included: true, highlight: true },
-      { name: "Análise Completa de ROI e ROAS por Canal", included: true },
-      { name: "Integração com Plataformas de Mídia (Meta, Google Ads)", included: true },
-      { name: "Consultoria Estratégica de Mídia (1h30 mensal)", included: true },
-      { name: "Relatório Inicial de Oportunidades SEO", included: true },
-      { name: "Blog Premium: 4 Artigos Estratégicos por Mês (100% administrado por nós)", included: true },
-      { name: "Relatório Mensal Detalhado com Plano de Ação", included: true },
-      { name: "Suporte Prioritário e Análise Proativa", included: true },
+      { 
+        name: "Site Profissional de Alta Performance", 
+        included: true,
+        description: "Integrado às suas plataformas de mídia para uma análise de funil completa."
+      },
+      { 
+        name: "Dashboard: Central de Comando de ROI", 
+        included: true, 
+        highlight: true,
+        description: "Painel unificado com dados de Google Ads e Meta Ads para otimizar seu investimento."
+      },
+      { 
+        name: "Consultoria e Análise Proativa", 
+        included: true,
+        description: "Inteligência de dados e estratégia contínua para maximizar seu Retorno sobre o Investimento."
+      },
     ],
     cta: "Escalar com Inteligência",
     popular: false,
@@ -97,32 +117,27 @@ const PricingTable = () => {
               
               <CardHeader className="pb-4">
                 <CardTitle className="text-2xl">{plan.name}</CardTitle>
-                {plan.dashboardName && (
-                  <div className="mt-2 mb-3">
-                    <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
-                      {plan.dashboardName}
-                    </Badge>
-                  </div>
-                )}
-                <CardDescription className="text-sm leading-relaxed">{plan.slogan}</CardDescription>
+                <div className="mt-3">
+                  <h3 className="text-lg font-semibold text-foreground">{plan.slogan}</h3>
+                  <p className="text-sm text-muted-foreground mt-2">{plan.description}</p>
+                </div>
               </CardHeader>
               
               <CardContent className="flex-1">
-                {/* Features */}
-                <div className="space-y-3">
-                  {plan.featuresHeader && (
-                    <p className="text-sm font-medium mb-3">{plan.featuresHeader}</p>
-                  )}
+                <div className="space-y-6">
                   {plan.features.map((feature, i) => (
-                    <div key={i} className="flex items-start gap-3">
-                      {feature.included ? (
+                    <div key={i} className="space-y-2">
+                      <div className="flex items-start gap-3">
                         <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      ) : (
-                        <Minus className="h-5 w-5 text-muted-foreground flex-shrink-0 mt-0.5" />
+                        <span className={`text-sm font-semibold ${feature.highlight ? 'text-primary' : 'text-foreground'}`}>
+                          {feature.name}
+                        </span>
+                      </div>
+                      {feature.description && (
+                        <p className="text-sm text-muted-foreground ml-8">
+                          {feature.description}
+                        </p>
                       )}
-                      <span className={`text-sm ${!feature.included ? 'text-muted-foreground' : ''} ${feature.highlight ? 'font-semibold text-foreground' : ''}`}>
-                        {feature.name}
-                      </span>
                     </div>
                   ))}
                 </div>
