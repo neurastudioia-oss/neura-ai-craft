@@ -2,15 +2,11 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Check, Minus } from "lucide-react";
-import { Separator } from "@/components/ui/separator";
 
 const pricingPlans = [
   {
     name: "Essencial",
     slogan: "Ideal para começar com uma presença digital profissional e sólida.",
-    setupPrice: "R$ 1.800",
-    monthlyPrice: "R$ 150/mês",
-    monthlyOptional: true,
     features: [
       { name: "Site Institucional de até 3 páginas", included: true },
       { name: "Design 100% Responsivo", included: true },
@@ -28,9 +24,6 @@ const pricingPlans = [
   {
     name: "Crescimento",
     slogan: "A solução completa para transformar seu site em uma máquina de gerar leads.",
-    setupPrice: "R$ 3.500",
-    monthlyPrice: "R$ 450/mês",
-    monthlyOptional: false,
     featuresHeader: "Tudo do Plano Essencial, e mais:",
     features: [
       { name: "Site de até 7 páginas + Blog", included: true },
@@ -46,9 +39,6 @@ const pricingPlans = [
   {
     name: "Performance",
     slogan: "Para empresas prontas para escalar com estratégia de dados e mídia paga.",
-    setupPrice: "R$ 5.900",
-    monthlyPrice: "R$ 850/mês",
-    monthlyOptional: false,
     featuresHeader: "Tudo do Plano Crescimento, e mais:",
     features: [
       { name: "Site Completo ou Landing Page de Alta Conversão", included: true },
@@ -99,31 +89,6 @@ const PricingTable = () => {
               </CardHeader>
               
               <CardContent className="flex-1">
-                {/* Pricing */}
-                <div className="mb-6 space-y-3">
-                  <div>
-                    <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-1">
-                      Investimento Inicial
-                    </div>
-                    <div className="text-3xl font-bold text-primary">{plan.setupPrice}</div>
-                    <div className="text-xs text-muted-foreground">Pagamento Único</div>
-                  </div>
-                  
-                  <Separator />
-                  
-                  <div>
-                    <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-1">
-                      Plano Mensal
-                    </div>
-                    <div className="text-2xl font-bold">{plan.monthlyPrice}</div>
-                    {plan.monthlyOptional && (
-                      <div className="text-xs text-muted-foreground">(Opcional)</div>
-                    )}
-                  </div>
-                </div>
-
-                <Separator className="my-6" />
-
                 {/* Features */}
                 <div className="space-y-3">
                   {plan.featuresHeader && (
