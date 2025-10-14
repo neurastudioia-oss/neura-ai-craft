@@ -15,15 +15,15 @@ const Solution = () => {
             </div>
             
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
-              Na Neura Studio, cada projeto tem dois pilares:
+              Na Neura Studio, cada projeto combina:
             </p>
             
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-4">
-              <span className="text-foreground font-semibold">O Motor:</span> Site de alta performance otimizado para converter.
+              <span className="text-foreground font-semibold">Alavancagem:</span> Site otimizado + estratégias de SEO, conversão e presença digital completa.
             </p>
             
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
-              <span className="text-foreground font-semibold">O Painel:</span> Dashboard personalizado que transforma dados em decisões claras.
+              <span className="text-foreground font-semibold">Monitoramento:</span> Relatórios e inteligência de dados que mostram exatamente onde investir.
             </p>
             
             <a
@@ -40,7 +40,7 @@ const Solution = () => {
               <div className="space-y-4">
                 {/* Header */}
                 <div className="border-b border-border pb-4">
-                  <h3 className="text-sm font-medium text-muted-foreground mb-2">Dashboard Personalizado</h3>
+                  <h3 className="text-sm font-medium text-muted-foreground mb-2">Inteligência de Dados</h3>
                   <div className="flex items-baseline gap-2">
                     <span className="text-3xl font-bold text-primary">R$ 47,3K</span>
                     <span className="text-sm text-muted-foreground">ROI este mês</span>
