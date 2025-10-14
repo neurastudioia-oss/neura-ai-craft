@@ -26,9 +26,16 @@ const Solution = () => {
               <span className="text-foreground font-semibold">O Painel de Controle:</span> Um dashboard 100% personalizado que traduz os dados do seu site em respostas claras.
             </p>
             
-            <p className="text-lg md:text-xl text-foreground font-semibold leading-relaxed">
+            <p className="text-lg md:text-xl text-foreground font-semibold leading-relaxed mb-8">
               Nós transformamos dados complexos em decisões de negócio inteligentes.
             </p>
+            
+            <a
+              href="#packages"
+              className="inline-flex items-center justify-center px-8 py-3 text-base font-medium rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors duration-300 shadow-lg hover:shadow-xl"
+            >
+              Ver os Planos
+            </a>
           </div>
           
           {/* Dashboard Visual */}
