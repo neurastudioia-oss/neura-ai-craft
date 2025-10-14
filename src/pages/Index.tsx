@@ -3,9 +3,9 @@ import Problem from "@/components/Problem";
 import Solution from "@/components/Solution";
 import PricingTable from "@/components/PricingTable";
 import Portfolio from "@/components/Portfolio";
-import Testimonials from "@/components/Testimonials";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
@@ -17,9 +17,9 @@ const Index = () => {
         <PricingTable />
       </div>
       <Portfolio />
-      <Testimonials />
       <ContactForm />
       <Footer />
+      <WhatsAppButton />
     </main>
   );
 };

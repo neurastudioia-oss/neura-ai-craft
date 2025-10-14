@@ -41,15 +41,15 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Contato</h4>
             <ul className="space-y-3 text-background/80">
               <li className="flex items-center gap-2">
-                <Mail className="h-4 w-4" />
-                <a href="mailto:contato@neurastudio.com" className="hover:text-background transition-colors">
-                  contato@neurastudio.com
+                <Phone className="h-4 w-4" />
+                <a href="https://wa.me/5561999167627" target="_blank" rel="noopener noreferrer" className="hover:text-background transition-colors">
+                  (61) 99916-7627
                 </a>
               </li>
               <li className="flex items-center gap-2">
-                <Phone className="h-4 w-4" />
-                <a href="tel:+5511999999999" className="hover:text-background transition-colors">
-                  (11) 99999-9999
+                <Mail className="h-4 w-4" />
+                <a href="mailto:contato@neurastudio.com" className="hover:text-background transition-colors">
+                  contato@neurastudio.com
                 </a>
               </li>
             </ul>

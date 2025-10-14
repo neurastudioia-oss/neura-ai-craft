@@ -12,7 +12,7 @@ const Portfolio = () => {
       image: catedralImage,
       description: "Site institucional para empresa de logística e transporte de veículos",
       results: "Média de 10 leads qualificados por dia",
-      tags: ["SEO", "Conversão", "Design Responsivo"]
+      tags: ["SEO", "Conversão", "Design Responsivo", "Consultoria em Mídia"]
     },
     {
       name: "Cléo Cabeleireiros",
@@ -20,7 +20,7 @@ const Portfolio = () => {
       image: cleoImage,
       description: "Site profissional para salão de beleza especializado em cabelo, unhas e bem-estar",
       results: "Aumento de 300% nos agendamentos via WhatsApp",
-      tags: ["SEO Local", "UX", "Integração WhatsApp"]
+      tags: ["SEO Local", "UX", "Integração WhatsApp", "Consultoria em Mídia"]
     }
   ];
 
