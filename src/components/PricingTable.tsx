@@ -41,10 +41,6 @@ const pricingPlans = [
 ];
 
 const PricingTable = () => {
-  const scrollToContact = () => {
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <section className="py-20 bg-background">
       <div className="container px-6">
@@ -94,9 +90,15 @@ const PricingTable = () => {
                   className="w-full" 
                   variant={plan.popular ? "default" : "outline"}
                   size="lg"
-                  onClick={scrollToContact}
+                  asChild
                 >
-                  {plan.cta}
+                  <a 
+                    href={`https://wa.me/5561999167627?text=Olá! Tenho interesse no plano ${plan.name}.`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {plan.cta}
+                  </a>
                 </Button>
               </CardFooter>
             </Card>

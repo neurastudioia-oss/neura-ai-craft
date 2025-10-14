@@ -27,7 +27,9 @@ const Solution = () => {
             </p>
             
             <a
-              href="#packages"
+              href="https://wa.me/5561999167627?text=Olá! Quero conhecer os planos da Neura Studio."
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-3 text-base font-medium rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors duration-300 shadow-lg hover:shadow-xl"
             >
               Ver os Planos
