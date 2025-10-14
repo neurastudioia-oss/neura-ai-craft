@@ -36,7 +36,7 @@ const Hero = () => {
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-          Nós criamos o site de alta performance que sua empresa precisa e entregamos o dashboard para você pilotar seu crescimento com clareza total.
+          Nós criamos soluções completas para alavancar e monitorar seu site de forma efetiva, transformando sua presença digital em resultados concretos.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -54,15 +54,15 @@ const Hero = () => {
         <div className="mt-16 flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-primary rounded-full" />
-            <span>Sites que convertem</span>
+            <span>SEO e Conversão otimizados</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-primary rounded-full" />
-            <span>Dashboard personalizado incluso</span>
+            <span>Estratégia digital completa</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-primary rounded-full" />
-            <span>Métricas em tempo real</span>
+            <span>Inteligência de dados inclusa</span>
           </div>
         </div>
       </div>
