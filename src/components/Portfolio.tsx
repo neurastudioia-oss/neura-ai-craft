@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink } from "lucide-react";
 import catedralImage from "@/assets/catedral-transportes.png";
+import cleoImage from "@/assets/cleo-cabelereiros.png";
 
 const Portfolio = () => {
   const projects = [
@@ -12,6 +13,14 @@ const Portfolio = () => {
       description: "Site institucional para empresa de logística e transporte de veículos",
       results: "Média de 10 leads qualificados por dia",
       tags: ["SEO", "Conversão", "Design Responsivo"]
+    },
+    {
+      name: "Cléo Cabeleireiros",
+      url: "https://www.cleocabelereiros.com.br/",
+      image: cleoImage,
+      description: "Site profissional para salão de beleza especializado em cabelo, unhas e bem-estar",
+      results: "Aumento de 300% nos agendamentos via WhatsApp",
+      tags: ["SEO Local", "UX", "Integração WhatsApp"]
     }
   ];
 
