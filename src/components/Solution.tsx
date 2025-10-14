@@ -10,20 +10,24 @@ const Solution = () => {
             <div className="flex items-center gap-3 mb-6">
               <Lightbulb className="h-12 w-12 text-primary" />
               <h2 className="text-4xl md:text-5xl font-bold">
-                Entregamos tudo que você precisa para crescer
+                Nós entregamos o mapa e a bússola.
               </h2>
             </div>
             
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
-              Criamos <span className="text-foreground font-semibold">sites de alta performance</span>, 
-              otimizados para SEO, conversão e experiência do usuário. 
-              Seu site é a base do crescimento digital.
+              Na Neura Studio, acreditamos que um site é muito mais do que um design bonito. É o motor central da sua estratégia digital. Por isso, cada projeto que entregamos tem um propósito duplo:
             </p>
             
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              E o nosso diferencial? Além do site, você recebe um{" "}
-              <span className="text-foreground font-semibold">dashboard personalizado</span> que conecta 
-              todas as suas métricas em tempo real, para que você tome decisões baseadas em dados, não em achismos.
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
+              <span className="text-foreground font-semibold">O Motor:</span> Um site de alta performance, tecnicamente otimizado para atrair e converter seu público.
+            </p>
+            
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
+              <span className="text-foreground font-semibold">O Painel de Controle:</span> Um dashboard 100% personalizado que traduz os dados do seu site em respostas claras.
+            </p>
+            
+            <p className="text-lg md:text-xl text-foreground font-semibold leading-relaxed">
+              Nós transformamos dados complexos em decisões de negócio inteligentes.
             </p>
           </div>
           

@@ -29,16 +29,14 @@ const Hero = () => {
         
         <h1 className="text-6xl md:text-8xl font-bold mb-8 leading-tight">
           <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-            Menos achismo,
+            Seu Negócio,
           </span>
           <br />
-          <span className="text-foreground">mais resultados.</span>
+          <span className="text-foreground">Guiado por Dados.</span>
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-          Criamos <span className="text-foreground font-semibold">sites de alta performance</span> que geram resultados reais.
-          <br />
-          E entregamos um <span className="text-foreground font-semibold">dashboard personalizado</span> para você acompanhar cada conversão e ROI em tempo real.
+          Nós criamos o site de alta performance que sua empresa precisa e entregamos o dashboard para você pilotar seu crescimento com clareza total.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -47,7 +45,7 @@ const Hero = () => {
             onClick={scrollToContact}
             className="text-lg px-10 py-7 shadow-2xl hover:shadow-primary/20 transition-all duration-300 hover:scale-105 group"
           >
-            Descubra seu Ambiente de Crescimento
+            Conheça os Ambientes de Crescimento
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>

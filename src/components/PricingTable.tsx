@@ -53,7 +53,7 @@ const PricingTable = () => {
             Escolha seu Ambiente de Crescimento
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Site profissional + Dashboard personalizado. Todos os planos incluem as ferramentas que você precisa para crescer com clareza e controle.
+            Nossa qualidade de construção é a mesma para todos. O que muda é a camada de inteligência e serviço para impulsionar seus resultados.
           </p>
         </div>
 

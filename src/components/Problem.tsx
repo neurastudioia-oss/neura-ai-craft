@@ -8,12 +8,10 @@ const Problem = () => {
           <AlertCircle className="h-16 w-16 text-primary" />
         </div>
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          Você dirige seu negócio no escuro?
+          Seu site trabalha para você ou apenas existe online?
         </h2>
         <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-          Ter um site é o primeiro passo. Mas sem dados claros, você está apenas adivinhando o que funciona. 
-          Campanhas, conteúdos, investimentos... tudo se torna um tiro no escuro. 
-          A falta de <span className="text-primary font-semibold">clareza sobre o que gera resultado</span> é o maior obstáculo para o crescimento.
+          Muitas empresas investem em um site e o tratam como um cartão de visitas digital. Ele existe, mas não gera oportunidades. Você não sabe quem o visita, de onde essas pessoas vêm, ou quais ações elas tomam. Cada real investido em marketing parece um tiro no escuro. A falta de dados claros transforma decisões importantes em apostas arriscadas.
         </p>
       </div>
     </section>

@@ -51,11 +51,10 @@ const ContactForm = () => {
       <div className="container px-6 max-w-4xl mx-auto">
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Chega de adivinhar. Veja a clareza em ação.
+            Pronto para parar de adivinhar e começar a decidir com clareza?
           </h2>
-          <p className="text-xl text-muted-foreground">
-            Que tal ver como seria o painel de controle do seu negócio? 
-            Agende uma demonstração gratuita e vamos desenhar, ao vivo, um esboço do seu dashboard personalizado.
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Chega de incertezas. Sua empresa merece uma presença digital que não apenas impressiona, mas que informa e gera resultados que você pode ver. Vamos conversar sobre como a Neura Studio pode construir seu ambiente de crescimento.
           </p>
         </div>
 
