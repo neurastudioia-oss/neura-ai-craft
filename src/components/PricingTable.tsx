@@ -6,80 +6,36 @@ import { Check, Minus } from "lucide-react";
 const pricingPlans = [
   {
     name: "Essencial",
-    dashboardName: "Painel de Saúde Digital",
-    slogan: "Sua Fundação Digital Inteligente",
-    description: "A presença online profissional que sua empresa merece, com clareza total sobre seus dados.",
+    slogan: "Sua Presença Digital Inteligente",
     features: [
-      { 
-        name: "Site Profissional de Alta Performance", 
-        included: true, 
-        description: "Uma base sólida com design moderno e otimizado, pronta para crescer com seu negócio."
-      },
-      { 
-        name: "Dashboard: Painel de Saúde Digital", 
-        included: true, 
-        highlight: true,
-        description: "Acompanhe em tempo real o tráfego e a origem dos seus visitantes."
-      },
-      { 
-        name: "Plano Mensal de Suporte & Segurança", 
-        included: true,
-        description: "Hospedagem, backups e manutenção para sua total tranquilidade."
-      },
+      { name: "Site Profissional de Alta Performance" },
+      { name: "Dashboard de Saúde Digital" },
+      { name: "Plano Mensal de Suporte & Segurança" },
     ],
-    cta: "Construir minha Base",
+    cta: "Começar Agora",
     popular: false,
   },
   {
     name: "Crescimento",
-    dashboardName: "Painel de Conversão e Leads",
-    slogan: "Seu Ambiente de Geração de Leads",
-    description: "A ferramenta completa para transformar seu site em uma máquina de resultados mensuráveis.",
+    slogan: "Sua Máquina de Geração de Leads",
     features: [
-      { 
-        name: "Site Profissional de Alta Performance", 
-        included: true,
-        description: "Configurado com tagueamento avançado de metas para rastrear cada conversão."
-      },
-      { 
-        name: "Dashboard: Painel de Conversão e Leads", 
-        included: true, 
-        highlight: true,
-        description: "Saiba exatamente quantos leads seu site gera e o que impulsiona seus resultados."
-      },
-      { 
-        name: "Agente de Conteúdo Estratégico", 
-        included: true,
-        description: "Nós criamos e publicamos 2 novos artigos de blog por mês para atrair seu público-alvo."
-      },
+      { name: "Site Profissional com Blog Integrado" },
+      { name: "Dashboard de Conversão e Leads" },
+      { name: "Plano Mensal de Suporte & Segurança" },
     ],
-    cta: "Acelerar meus Resultados",
+    cta: "Ativar Crescimento",
     popular: true,
   },
   {
     name: "Performance",
-    dashboardName: "Central de Comando de ROI",
     slogan: "Sua Central de Comando para ROI",
-    description: "A parceria estratégica definitiva para escalar seu negócio com marketing orientado a dados.",
     features: [
-      { 
-        name: "Site Profissional de Alta Performance", 
-        included: true,
-        description: "Integrado às suas plataformas de mídia para uma análise de funil completa."
-      },
-      { 
-        name: "Dashboard: Central de Comando de ROI", 
-        included: true, 
-        highlight: true,
-        description: "Painel unificado com dados de Google Ads e Meta Ads para otimizar seu investimento."
-      },
-      { 
-        name: "Consultoria e Análise Proativa", 
-        included: true,
-        description: "Inteligência de dados e estratégia contínua para maximizar seu Retorno sobre o Investimento."
-      },
+      { name: "Site Profissional com Blog Integrado" },
+      { name: "Dashboard de ROI e Mídia Paga" },
+      { name: "Consultoria Estratégica de Mídia" },
+      { name: "Plano Mensal de Suporte & Segurança" },
     ],
-    cta: "Escalar com Inteligência",
+    cta: "Escalar Resultados",
     popular: false,
   },
 ];
@@ -115,29 +71,19 @@ const PricingTable = () => {
                 </Badge>
               )}
               
-              <CardHeader className="pb-4">
-                <CardTitle className="text-2xl">{plan.name}</CardTitle>
-                <div className="mt-3">
-                  <h3 className="text-lg font-semibold text-foreground">{plan.slogan}</h3>
-                  <p className="text-sm text-muted-foreground mt-2">{plan.description}</p>
-                </div>
+              <CardHeader className="pb-8">
+                <CardTitle className="text-2xl mb-3">{plan.name}</CardTitle>
+                <p className="text-base font-medium text-foreground">{plan.slogan}</p>
               </CardHeader>
               
               <CardContent className="flex-1">
-                <div className="space-y-6">
+                <div className="space-y-4">
                   {plan.features.map((feature, i) => (
-                    <div key={i} className="space-y-2">
-                      <div className="flex items-start gap-3">
-                        <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span className={`text-sm font-semibold ${feature.highlight ? 'text-primary' : 'text-foreground'}`}>
-                          {feature.name}
-                        </span>
-                      </div>
-                      {feature.description && (
-                        <p className="text-sm text-muted-foreground ml-8">
-                          {feature.description}
-                        </p>
-                      )}
+                    <div key={i} className="flex items-start gap-3">
+                      <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-foreground">
+                        {feature.name}
+                      </span>
                     </div>
                   ))}
                 </div>
