@@ -32,7 +32,7 @@ const Hero = () => {
         </h1>
         
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed px-4">
-          Criamos seu site profissional e entregamos um ecossistema completo de soluções para alavancar sua presença digital: SEO, análise de dados, estratégias de conversão e monitoramento contínuo.
+          Sites profissionais com SEO otimizado, análise de dados e estratégias de conversão para gerar resultados reais.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
