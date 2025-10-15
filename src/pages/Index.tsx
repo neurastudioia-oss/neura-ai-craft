@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
 import Solution from "@/components/Solution";
+import Comparison from "@/components/Comparison";
 import PricingTable from "@/components/PricingTable";
 import Portfolio from "@/components/Portfolio";
 import ContactForm from "@/components/ContactForm";
@@ -13,6 +14,7 @@ const Index = () => {
       <Hero />
       <Problem />
       <Solution />
+      <Comparison />
       <div id="packages">
         <PricingTable />
       </div>
