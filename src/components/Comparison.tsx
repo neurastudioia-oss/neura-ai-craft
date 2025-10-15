@@ -8,7 +8,7 @@ const Comparison = () => {
     { feature: "SEO otimizado", has: false },
     { feature: "Blog e conteúdo estratégico", has: false },
     { feature: "Relatórios de performance", has: false },
-    { feature: "Inteligência de dados", has: false },
+    { feature: "Consultoria de mídia", has: false },
     { feature: "Monitoramento contínuo", has: false },
   ];
 
@@ -19,7 +19,7 @@ const Comparison = () => {
     { feature: "SEO otimizado", has: true },
     { feature: "Blog e conteúdo estratégico", has: true },
     { feature: "Relatórios de performance", has: true },
-    { feature: "Inteligência de dados", has: true },
+    { feature: "Consultoria de mídia", has: true },
     { feature: "Monitoramento contínuo", has: true },
   ];
 
