@@ -3,8 +3,19 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink } from "lucide-react";
 import catedralImage from "@/assets/catedral-transportes.png";
 import cleoImage from "@/assets/cleo-cabelereiros.png";
+import { useAnalytics } from "@/hooks/use-analytics";
 
 const Portfolio = () => {
+  const { trackEvent } = useAnalytics();
+
+  const handleProjectClick = (projectName: string) => {
+    trackEvent('project_view', {
+      event_category: 'engagement',
+      event_label: projectName.toLowerCase().replace(/\s+/g, '_'),
+      project_name: projectName
+    });
+  };
+
   const projects = [
     {
       name: "Catedral Transportes",
@@ -55,6 +66,7 @@ const Portfolio = () => {
                     href={project.url} 
                     target="_blank" 
                     rel="noopener noreferrer"
+                    onClick={() => handleProjectClick(project.name)}
                     className="text-primary hover:text-primary/80 transition-colors"
                     aria-label={`Visitar site ${project.name}`}
                   >

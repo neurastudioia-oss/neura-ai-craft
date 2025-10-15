@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Check, Minus } from "lucide-react";
+import { useAnalytics } from "@/hooks/use-analytics";
 
 const pricingPlans = [
   {
@@ -41,6 +42,16 @@ const pricingPlans = [
 ];
 
 const PricingTable = () => {
+  const { trackEvent } = useAnalytics();
+
+  const handlePackageClick = (packageName: string) => {
+    trackEvent('package_click', {
+      event_category: 'engagement',
+      event_label: packageName.toLowerCase(),
+      package_name: packageName
+    });
+  };
+
   return (
     <section className="py-12 sm:py-16 md:py-20 bg-background">
       <div className="container px-4 sm:px-6">
@@ -96,6 +107,7 @@ const PricingTable = () => {
                     href={`https://wa.me/5561999167627?text=Olá! Tenho interesse no plano ${plan.name}.`}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => handlePackageClick(plan.name)}
                   >
                     {plan.cta}
                   </a>

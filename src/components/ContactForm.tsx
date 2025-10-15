@@ -7,6 +7,7 @@ import { useToast } from "@/hooks/use-toast";
 import { Send, MessageCircle, Mail } from "lucide-react";
 import { z } from "zod";
 import { supabase } from "@/integrations/supabase/client";
+import { useAnalytics } from "@/hooks/use-analytics";
 
 const contactSchema = z.object({
   name: z.string().trim().min(2, { message: "Nome deve ter pelo menos 2 caracteres" }).max(100),
@@ -17,6 +18,7 @@ const contactSchema = z.object({
 
 const ContactForm = () => {
   const { toast } = useToast();
+  const { trackEvent } = useAnalytics();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -41,11 +43,17 @@ const ContactForm = () => {
 
       if (error) throw error;
 
+      trackEvent('form_submission', {
+        event_category: 'lead',
+        event_label: 'contact_form',
+        value: 1
+      });
+
       toast({
         title: "Mensagem enviada!",
         description: "Entraremos em contato em breve.",
       });
-      
+
       setFormData({ name: "", email: "", phone: "", message: "" });
     } catch (error) {
       if (error instanceof z.ZodError) {
@@ -64,6 +72,14 @@ const ContactForm = () => {
     } finally {
       setIsSubmitting(false);
     }
+  };
+
+  const handleWhatsAppClick = () => {
+    trackEvent('whatsapp_click', {
+      event_category: 'engagement',
+      event_label: 'contact_section',
+      location: 'contact_form_cta'
+    });
   };
 
   return (
@@ -88,6 +104,7 @@ const ContactForm = () => {
                 href="https://wa.me/5561999167627?text=Olá! Quero falar sobre meu projeto e conhecer as soluções da Neura Studio."
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={handleWhatsAppClick}
               >
                 <MessageCircle className="mr-2 h-5 w-5" />
                 Falar no WhatsApp
