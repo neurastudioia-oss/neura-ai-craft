@@ -71,7 +71,7 @@ const ContactForm = () => {
       <div className="container px-4 sm:px-6 max-w-4xl mx-auto">
         <div className="text-center mb-8 sm:mb-12 animate-fade-in">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 px-2">
-            Pronto para parar de adivinhar e começar a decidir com clareza?
+            Pronto para transformar sua presença digital?
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8 px-4">
             Vamos construir seu ambiente de crescimento com clareza total sobre seus resultados.
