@@ -1,6 +1,17 @@
 import { Mail, Phone, Linkedin, Instagram } from "lucide-react";
+import { useAnalytics } from "@/hooks/use-analytics";
 
 const Footer = () => {
+  const { trackEvent } = useAnalytics();
+
+  const handleWhatsAppClick = () => {
+    trackEvent('whatsapp_click', {
+      event_category: 'engagement',
+      event_label: 'footer_phone',
+      location: 'footer'
+    });
+  };
+
   return (
     <footer className="bg-foreground text-background py-8 sm:py-12">
       <div className="container px-4 sm:px-6">
@@ -42,7 +53,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm sm:text-base text-background/80">
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
-                <a href="https://wa.me/5561999167627" target="_blank" rel="noopener noreferrer" className="hover:text-background transition-colors">
+                <a href="https://wa.me/5561999167627" target="_blank" rel="noopener noreferrer" onClick={handleWhatsAppClick} className="hover:text-background transition-colors">
                   (61) 99916-7627
                 </a>
               </li>

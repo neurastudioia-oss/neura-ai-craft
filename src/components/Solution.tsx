@@ -1,6 +1,17 @@
 import { Lightbulb } from "lucide-react";
+import { useAnalytics } from "@/hooks/use-analytics";
 
 const Solution = () => {
+  const { trackEvent } = useAnalytics();
+
+  const handleCTAClick = () => {
+    trackEvent('whatsapp_click', {
+      event_category: 'engagement',
+      event_label: 'solution_cta',
+      location: 'solution_section'
+    });
+  };
+
   return (
     <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
       <div className="container px-4 sm:px-6 max-w-6xl mx-auto">
@@ -30,6 +41,7 @@ const Solution = () => {
               href="https://wa.me/5561999167627?text=Olá! Quero conhecer os planos da Neura Studio."
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleCTAClick}
               className="inline-flex items-center justify-center w-full sm:w-auto px-6 sm:px-8 py-3 text-sm sm:text-base font-medium rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors duration-300 shadow-lg hover:shadow-xl"
             >
               Ver os Planos
