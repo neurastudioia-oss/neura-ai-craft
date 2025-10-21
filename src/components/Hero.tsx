@@ -1,8 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import { useAnalytics } from "@/hooks/use-analytics";
 
 const Hero = () => {
+  const { trackEvent } = useAnalytics();
+
+  const handleHeroCTAClick = () => {
+    trackEvent('whatsapp_click', {
+      event_category: 'engagement',
+      event_label: 'hero_cta',
+      location: 'hero_section'
+    });
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
       {/* Animated Background Elements */}
@@ -41,7 +52,7 @@ const Hero = () => {
             asChild
             className="text-base sm:text-lg px-8 sm:px-12 py-6 sm:py-8 w-full sm:w-auto shadow-[0_0_40px_rgba(var(--primary-rgb),0.3)] hover:shadow-[0_0_60px_rgba(var(--primary-rgb),0.5)] transition-all duration-500 hover:scale-105 group relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:-translate-x-full hover:before:translate-x-full before:transition-transform before:duration-700"
           >
-            <a href="https://wa.me/5561999167627?text=Olá! Quero alavancar minha presença digital com a Neura Studio." target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5561999167627?text=Olá! Quero alavancar minha presença digital com a Neura Studio." target="_blank" rel="noopener noreferrer" onClick={handleHeroCTAClick}>
               Quero Alavancar Meu Negócio
               <ArrowRight className="ml-2 h-5 w-5 sm:h-6 sm:w-6 group-hover:translate-x-2 transition-transform duration-300" />
             </a>
