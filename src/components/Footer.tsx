@@ -1,5 +1,6 @@
 import { Mail, Phone, Linkedin, Instagram } from "lucide-react";
 import { useAnalytics } from "@/hooks/use-analytics";
+import logo from "@/assets/neura-studio-logo.png";
 
 const Footer = () => {
   const { trackEvent } = useAnalytics();
@@ -18,6 +19,11 @@ const Footer = () => {
         <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Logo and Description */}
           <div>
+            <img 
+              src={logo} 
+              alt="Neura Studio Logo" 
+              className="h-12 w-auto mb-4 brightness-0 invert"
+            />
             <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Neura Studio</h3>
             <p className="text-sm sm:text-base text-background/80 leading-relaxed">
               Websites inteligentes que geram resultados reais através da 

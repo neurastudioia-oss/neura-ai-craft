@@ -36,7 +36,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <section className="py-12 sm:py-16 md:py-20 bg-secondary/30">
+    <section id="portfolio" className="py-12 sm:py-16 md:py-20 bg-secondary/30">
       <div className="container px-4 sm:px-6">
         <div className="text-center mb-10 sm:mb-16 animate-fade-in">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 px-2">
