@@ -75,7 +75,7 @@ const ContactForm = () => {
   };
 
   const handleWhatsAppClick = () => {
-    trackEvent('whatsapp_click', {
+    trackEvent('contact', {
       event_category: 'engagement',
       event_label: 'contact_section',
       location: 'contact_form_cta'

@@ -5,7 +5,7 @@ const Solution = () => {
   const { trackEvent } = useAnalytics();
 
   const handleCTAClick = () => {
-    trackEvent('whatsapp_click', {
+    trackEvent('contact', {
       event_category: 'engagement',
       event_label: 'solution_cta',
       location: 'solution_section'

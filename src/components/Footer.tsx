@@ -5,7 +5,7 @@ const Footer = () => {
   const { trackEvent } = useAnalytics();
 
   const handleWhatsAppClick = () => {
-    trackEvent('whatsapp_click', {
+    trackEvent('contact', {
       event_category: 'engagement',
       event_label: 'footer_phone',
       location: 'footer'

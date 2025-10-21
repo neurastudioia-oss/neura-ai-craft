@@ -45,7 +45,7 @@ const PricingTable = () => {
   const { trackEvent } = useAnalytics();
 
   const handlePackageClick = (packageName: string) => {
-    trackEvent('package_click', {
+    trackEvent('contact', {
       event_category: 'engagement',
       event_label: packageName.toLowerCase(),
       package_name: packageName

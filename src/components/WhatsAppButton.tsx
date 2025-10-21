@@ -5,7 +5,7 @@ const WhatsAppButton = () => {
   const { trackEvent } = useAnalytics();
 
   const handleClick = () => {
-    trackEvent('whatsapp_click', {
+    trackEvent('contact', {
       event_category: 'engagement',
       event_label: 'floating_button',
       location: 'fixed_bottom_right'

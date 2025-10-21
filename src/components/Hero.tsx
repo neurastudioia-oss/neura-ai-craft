@@ -7,7 +7,7 @@ const Hero = () => {
   const { trackEvent } = useAnalytics();
 
   const handleHeroCTAClick = () => {
-    trackEvent('whatsapp_click', {
+    trackEvent('contact', {
       event_category: 'engagement',
       event_label: 'hero_cta',
       location: 'hero_section'
