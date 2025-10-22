@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink } from "lucide-react";
 import catedralImage from "@/assets/catedral-transportes.png";
 import cleoImage from "@/assets/cleo-cabelereiros.png";
+import fitNaMesaImage from "@/assets/fit-na-mesa.png";
 import { useAnalytics } from "@/hooks/use-analytics";
 
 const Portfolio = () => {
@@ -32,6 +33,14 @@ const Portfolio = () => {
       description: "Site profissional para salão de beleza especializado em cabelo, unhas e bem-estar",
       results: "Aumento de 300% nos agendamentos via WhatsApp",
       tags: ["SEO Local", "UX", "Integração WhatsApp", "Consultoria em Mídia"]
+    },
+    {
+      name: "Fit na Mesa",
+      url: "https://www.fitnamesa.com.br/",
+      image: fitNaMesaImage,
+      description: "Site de vendas para negócio de marmitas saudáveis congeladas com sistema de pedidos",
+      results: "Facilitou gestão de pedidos e aumentou alcance digital",
+      tags: ["E-commerce", "UX", "Design Responsivo", "Integração WhatsApp"]
     }
   ];
 
